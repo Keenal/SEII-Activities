@@ -1,0 +1,16 @@
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\Castle.Core.dll
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\Moq.dll
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\Castle.Core.xml
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\Moq.pdb
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\Moq.xml
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Keena\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
