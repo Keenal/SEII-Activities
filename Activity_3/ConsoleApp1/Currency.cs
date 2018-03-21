@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Activity2
 {
     
-    public class Currency
+    public abstract class Currency
     {
         private CurrencyType type;
     
@@ -17,59 +17,61 @@ namespace Activity2
             set;
         }
 
-        public Currency(CurrencyType type)
+        // Replace the Currency constructor with a factory method for each of the Currency types
+        public static Currency USD(CurrencyType type)
         {
-            this.type = type;
+            Currency = new Currency(type);
+            return Currency;
         }
+
+        public static Currency Pounds(CurrencyType type)
+        {
+            Currency = new Currency(type);
+            return Currency;
+        }
+
+        public static Currency Euros(CurrencyType type)
+        {
+            Currency = new Currency(type);
+            return Currency;
+        }
+
+        public abstract double ConvertToUSD(double startingAmount, CurrencyType convertedCurrencyType);
+
+        public abstract double ConvertFromUSD(double startingAmount, CurrencyType convertedCurrencyType);
 
         public virtual double ConvertCurrency(double startingAmount, CurrencyType convertedCurrencyType)
         {
             double finalAmount = 0.0;
 
-            switch (this.type)
+            // convert the current from USD to current
+            if (this.type == CurrencyType.USD) {
+                finalAmount = ConvertFromUSD(startingAmount, this.type);
+            }
+
+            if (this.type == CurrencyType.Pounds)
             {
-                case CurrencyType.USD:
-                    switch (convertedCurrencyType)
-                    {
-                        case CurrencyType.USD:
-                            finalAmount = startingAmount;
-                            break;
-                        case CurrencyType.Pounds:
-                            finalAmount = 0.65 * startingAmount;
-                            break;
-                        case CurrencyType.Euros:
-                            finalAmount = 0.88 * startingAmount;
-                            break;
-                    }
-                    break;
-                case CurrencyType.Pounds:
-                    switch (convertedCurrencyType)
-                    {
-                        case CurrencyType.USD:
-                            finalAmount = 1.54 * startingAmount;
-                            break;
-                        case CurrencyType.Pounds:
-                            finalAmount = startingAmount;
-                            break;
-                        case CurrencyType.Euros:
-                            finalAmount = 1.35 * startingAmount;
-                            break;
-                    }
-                    break;
-                case CurrencyType.Euros:
-                    switch (convertedCurrencyType)
-                    {
-                        case CurrencyType.USD:
-                            finalAmount = 1.14 * startingAmount;
-                            break;
-                        case CurrencyType.Pounds:
-                            finalAmount = 0.74 * startingAmount;
-                            break;
-                        case CurrencyType.Euros:
-                            finalAmount = startingAmount;
-                            break;
-                    }
-                    break;
+                finalAmount = ConvertFromUSD(0.65 * startingAmount, this.type);
+            }
+
+            if (this.type == CurrencyType.Euros)
+            {
+                finalAmount = ConvertFromUSD(0.88 * startingAmount, this.type);
+            }
+
+            // convert the current currency to USD
+            if (this.type == CurrencyType.USD) {
+                finalAmount = ConvertToUSD(startingAmount, CurrencyType.USD);
+            }
+
+            if (this.type == CurrencyType.Pounds)
+            {
+                finalAmount = ConvertToUSD(1.54 * startingAmount, CurrencyType.USD);
+            }
+
+            if (this.type == CurrencyType.Euros)
+            {
+                finalAmount = ConvertToUSD(1.14 * startingAmount, CurrencyType.USD);
             }
 
             return finalAmount;

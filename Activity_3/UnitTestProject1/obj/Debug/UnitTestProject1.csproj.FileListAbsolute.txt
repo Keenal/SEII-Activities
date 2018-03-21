@@ -23,3 +23,7 @@ C:\Users\Keena\source\repos\ConsoleApp1\UnitTestProject1\bin\Debug\System.Thread
 C:\Users\Keena\source\repos\ConsoleApp1\UnitTestProject1\bin\Debug\System.ValueTuple.xml
 C:\Users\Keena\source\repos\ConsoleApp1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\Keena\source\repos\ConsoleApp1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\Keenal\Desktop\SEII-Activities\Activity_3\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Keenal\Desktop\SEII-Activities\Activity_3\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
+C:\Users\Keenal\Desktop\SEII-Activities\Activity_3\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Keenal\Desktop\SEII-Activities\Activity_3\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
